@@ -28,8 +28,12 @@ public class Person {
 
     }
 
-    public void equals() {
+    public boolean equals(Person h) {
+        if (name.equals(h.getName()) && age == h.getAge()) {
+            return true;
+        } else {
+            return false;
+        }
 
     }
-
 }
