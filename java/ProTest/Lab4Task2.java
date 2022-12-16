@@ -6,6 +6,11 @@ public class Lab4Task2 {
     public static void main(String[] args) {
         Person personA = inputPerson();
         Person personB = inputPerson();
+        if (personA.getAge() == personB.getAge()) {
+            System.out.println(personA.getName() + " and " + personB.getName() + " are the same age.");
+        } else {
+            System.out.println(personA.getName() + " and " + personB.getName() + " are not the same age.");
+        }
     }
 
     static Person inputPerson() {
