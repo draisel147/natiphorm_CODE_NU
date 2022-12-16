@@ -2,7 +2,7 @@ package ProTest;
 
 import java.util.Scanner;
 
-//leap year ดปรแกรมคำนวน 4ปี
+//leap year โปรแกรมคำนวน 4ปี
 public class Qtion2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
