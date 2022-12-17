@@ -1,11 +1,11 @@
 package ProTest;
 
-//For Lab4
+//code For Lab4
 public class Person {
     private String name;
     private int age;
 
-    public Person(String name, int age) {// constructor
+    public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }

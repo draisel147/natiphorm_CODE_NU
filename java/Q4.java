@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Q4 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println();
-        String input = scanner.nextLine();
+        String input = sc.nextLine();
 
         int atIndex = input.indexOf('@');
 
