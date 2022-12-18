@@ -17,7 +17,7 @@ public class Qtion7 {
             System.out.println("Error");
         } else {
             // Print out the x-th character of the string
-            System.out.println(str.charAt(x));
+            System.out.println(str.charAt(x - 1));
         }
     }
 }
