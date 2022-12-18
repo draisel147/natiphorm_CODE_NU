@@ -1,6 +1,7 @@
 package ProTest;
 
 import java.util.*;
+//โปรแกรมคำนวณ อายุบนโลกและดวงจันทร์
 
 public class Qtion1 {
     public static void main(String[] args) {
