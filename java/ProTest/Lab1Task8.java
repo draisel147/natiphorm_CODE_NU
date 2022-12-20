@@ -1,3 +1,5 @@
+package ProTest;
+
 public class Lab1Task8 {
     public static void main(String[] args) {
         char last = 'E';

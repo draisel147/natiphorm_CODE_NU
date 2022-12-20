@@ -1,3 +1,5 @@
+package ProTest;
+
 public class TastTask1 {
     public static void main(String[] args) {
         String input = "This is the way it is";

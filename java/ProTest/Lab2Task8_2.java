@@ -1,3 +1,5 @@
+package ProTest;
+
 public class Lab2Task8_2 {
     public static void main(String[] args) {
         char z = last("programming");

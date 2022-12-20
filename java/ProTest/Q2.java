@@ -1,3 +1,5 @@
+package ProTest;
+
 import java.util.*;
 
 //โปรแกรม แปลงเลขฐาน 16 เป็นเลขฐาน 2

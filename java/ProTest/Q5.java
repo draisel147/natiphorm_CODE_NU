@@ -1,3 +1,5 @@
+package ProTest;
+
 import java.util.Scanner;
 
 //โปรแกรมนับ จำนวนคำแต่ละประโยค

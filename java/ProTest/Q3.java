@@ -1,3 +1,5 @@
+package ProTest;
+
 import java.util.*;
 
 //โปรแกรมนับตัวอักษร aeiou

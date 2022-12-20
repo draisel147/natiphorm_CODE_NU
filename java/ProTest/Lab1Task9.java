@@ -1,3 +1,5 @@
+package ProTest;
+
 public class Lab1Task9 {
     public static void main(String[] args) {
         int rows = 6, coef = 1;

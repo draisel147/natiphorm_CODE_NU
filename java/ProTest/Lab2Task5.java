@@ -1,3 +1,5 @@
+package ProTest;
+
 public class Lab2Task5 {
     public static void main(String[] args) {
         final int MIN = 10, MAX = 20;

@@ -1,3 +1,5 @@
+package ProTest;
+
 public class Lab1Task5 {
     public static void main(String[] args) {
         int firstArg = 0;

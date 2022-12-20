@@ -1,4 +1,4 @@
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
+package ProTest;
 
 public class Lab2Task3 {
     public static void main(String[] args) {
