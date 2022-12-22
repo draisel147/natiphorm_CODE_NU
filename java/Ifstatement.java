@@ -21,6 +21,7 @@ public class Ifstatement {
         if (a == 2) {
             System.out.println("แต่งงานรึยัง : ");
             String Mer = sc.next();
+            System.out.println();
             if (Mer.equals("แต่งงานแล้ว")) {
                 System.out.println("ใช้คำนำหน้า นาง");
             }

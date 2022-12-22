@@ -6,7 +6,7 @@ public class Qtion3 {
     // โปรแกรม ลำดับดวงดาว
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter a planet name: ");
+        System.out.print("");
         String planet = input.nextLine().toLowerCase();
 
         if (planet.equals("mercury")) {
