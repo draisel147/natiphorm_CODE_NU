@@ -1,5 +1,6 @@
 package ProTest;
 
+//for lab5
 public class Fraction {
     private int top;
     private int bottom;
