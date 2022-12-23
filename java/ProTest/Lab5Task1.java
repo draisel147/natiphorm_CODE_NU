@@ -5,6 +5,5 @@ public class Lab5Task1 {
         Fraction frac = new Fraction(1, 3);
         System.out.println(frac.toString());
 
-        System.out.println(frac + "=" + frac.toDouble());
     }
 }
