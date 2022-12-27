@@ -26,6 +26,7 @@ public class Ifstatement {
                 System.out.println("ใช้คำนำหน้า นาง");
             }
             if (Mer.equals("ยัง")) {
+
                 System.out.println("ระบุอายุ : ");
                 int ageF = sc.nextInt();
                 if (ageF >= 15) {
