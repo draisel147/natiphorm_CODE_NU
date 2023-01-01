@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ifstatement {
+public class If18Old {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("เลือกเพศ");
@@ -21,23 +21,21 @@ public class Ifstatement {
         if (a == 2) {
             System.out.println("แต่งงานรึยัง : ");
             String Mer = sc.next();
-            System.out.println();
+
             if (Mer.equals("แต่งงานแล้ว")) {
                 System.out.println("ใช้คำนำหน้า นาง");
             }
             if (Mer.equals("ยัง")) {
-
-                System.out.println("ระบุอายุ : ");
+                System.out.print("ระบุอายุ : ");
                 int ageF = sc.nextInt();
                 if (ageF >= 15) {
                     System.out.println("คำนำหน้า นางสาว");
                 } else {
                     System.out.println("คำนำหน้า เด็กหญิง");
                 }
-
             }
+            System.out.println("จบโปรแกรม");
         }
-        System.out.println("จบโปรแกรม");
 
     }
 }
