@@ -18,10 +18,10 @@ public class A4 {
                 hasOne = true;
                 if (hasTwo && !hasThree) {
                     System.out.println("false");
-                    return;
                 }
             } else if (numbers[i].equals("2")) {
                 hasTwo = true;
+                
                 if (!hasOne && !hasThree) {
                     System.out.println("false");
                     return;
@@ -37,6 +37,7 @@ public class A4 {
 
         if (hasOne && hasTwo && hasThree) {
             System.out.println("true");
+
         }
     }
 }

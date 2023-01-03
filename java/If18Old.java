@@ -17,22 +17,23 @@ public class If18Old {
                 System.out.println("คำนำหน้า เด็กชาย");
 
             }
-        }
-        if (a == 2) {
-            System.out.println("แต่งงานรึยัง : ");
-            String Mer = sc.next();
+        } else if (a == 2) {
+            System.out.print("แต่งงานรึยัง : ");
+            String Mer = sc.nextLine();
+            switch (Mer) {
+                case "แต่งงานแล้ว":
+                    Mer = "ใช้คำนำหน้านาง";
+                    break;
+                case "ยัง":
+                    System.out.print("อายุเท่าไหร่ : ");
+                    int ageG = sc.nextInt();
+                    if (ageG >= 15) {
+                        System.out.println("คำนำหน้า นางสาว");
+                    } else {
+                        System.out.println("คำนำหน้า เด็กหญิง");
 
-            if (Mer.equals("แต่งงานแล้ว")) {
-                System.out.println("ใช้คำนำหน้า นาง");
-            }
-            if (Mer.equals("ยัง")) {
-                System.out.print("ระบุอายุ : ");
-                int ageF = sc.nextInt();
-                if (ageF >= 15) {
-                    System.out.println("คำนำหน้า นางสาว");
-                } else {
-                    System.out.println("คำนำหน้า เด็กหญิง");
-                }
+                    }
+                    break;
             }
             System.out.println("จบโปรแกรม");
         }
