@@ -21,7 +21,7 @@ public class A4 {
                 }
             } else if (numbers[i].equals("2")) {
                 hasTwo = true;
-                
+
                 if (!hasOne && !hasThree) {
                     System.out.println("false");
                     return;

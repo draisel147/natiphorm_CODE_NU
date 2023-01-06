@@ -7,9 +7,10 @@ public class Q6 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println();
-        String string1 = sc.nextLine();
+        String string1 = sc.nextLine().toLowerCase();
+
         System.out.print("");
-        String string2 = sc.nextLine();
+        String string2 = sc.nextLine().toLowerCase();
 
         if (string1.compareTo(string2) < 0) {
             System.out.println(string1);
