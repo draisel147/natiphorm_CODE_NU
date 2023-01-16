@@ -35,8 +35,8 @@ public class If18Old {
                     }
                     break;
             }
-            System.out.println("จบโปรแกรม");
         }
+        System.out.println("จบโปรแกรม");
 
     }
 }
