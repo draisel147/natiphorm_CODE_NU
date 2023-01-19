@@ -3,16 +3,15 @@ package OOP;
 public class A5 {
     public static void main(String[] args) {
         String[] words = Input.stringArray();
-        String result = longWord(words);
-        System.out.println(result);
-    }
-
-    public static String longWord(String[] words) {
+        boolean found = false;
         for (String word : words) {
             if (word.length() > 6) {
-                return word;
+                System.out.println(word);
+                found = true;
             }
         }
-        return "nothing";
+        if (!found) {
+            System.out.println("nothing");
+        }
     }
 }
