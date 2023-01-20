@@ -8,7 +8,7 @@ public class NestedLoop {
                 System.out.println("รอบใน =" + j);
 
             }
-        }
 
+        }
     }
 }
