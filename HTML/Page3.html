@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+        span{
+            border: 1px solid green;
+        }
+    </style>
 </head>
-<body>
+<body >
     <h1>เรียน TABLE</h1>
-    <hr>
-    <h1>รายการสินค้า</h1>
+    <hr><hr>
+    <h1 align="center">รายการสินค้า</h1>
     <!-- ขอบเขตของการสร้างตาราง -->
      <!-- การสร้างตาราง -->
     <!-- table = ใข้กำหนด สำหรับสร้างตาราง -->
@@ -31,10 +39,17 @@
     <!-- <table bgcolor="สี">=  กำหนดสีทั้งแถวและคอลัมน์ -->
     <!-- <tr bgcolor="สี">=  สีของแถว -->
     <!-- <td bgcolor="สี">=  สีของคอลัมน์ -->
+    
+    <!-- colspan="x" รวมคอลัมน์ ค่า x คือจำนวณคอลัมน์ที่ต้องการรวมเข้าด้วยกัน (ช่อง <td>) -->
+    <!-- rowspan ="x" รวมแถวค่า x คือจำนวนแถวที่ต้องการรวมเข้าด้วยกัน -->
+    <!-- align="left,center,right" จัดตำแหน่งของภาพ หรือ ตัวอักษรภายในช่องตาราง <td> ค่าปกติคือ left -->
+    <!-- Cellpadding (ขยายพื้นที่จากด้านในตาราง) แสดงข้อมูลภายในตาราง หากมีค่ามากก็จะมีพื้นที่การแสดงเป็นที่ว่างมากขึ้น ดดยมีค่าเป็น 0 (หน่วย Pixel) -->
+    <!-- Cellspacing (ขยายพื้นที่ด้านนอกตาราง)กำหนดขนาดเส้นตารางหากมีค่ามากขึ้นเส้นตารางก็ จะมีขนาดมากตามไปด้วย โดยมีค่าเริ่มต้นเป็น 0 (หน่วย Pixel) -->
 
+    <!-- =========================================================================== -->
     
         
-    <table border="2" bgcolor="yellow"  width="70%">
+    <table border="2" bgcolor="yellow" align="center" cellpadding="10" cellspacing="10">
        <thead>
         <th>รหัสสินค้า</th>
             <th>ภาพสินค้า</th>
@@ -43,9 +58,9 @@
             <th>สั่งซื้อสินค้า</th>
        </thead>
         
-       <tbody>
-        <!-- tr = แถวเอาไว้ใส่ข้อมูล -->
-        <!-- td = กำหนดคอลัมน์ ที่อยู่ในแถวว่าอยู่ไหน -->
+       <tbody align="center">
+        <!-- tr = แถวเอาไว้ใส่ข้อมูล (แนวนอน)-->
+        <!-- td = กำหนดคอลัมน์ (แนวตั้ง) -->
         
         <tr bgcolor="green">
             <td>
@@ -53,7 +68,7 @@
                     
             </td>
             <!-- ภาพสินค้า -->
-            <td>
+            <td >
                 <img src="https://cdn.pixabay.com/photo/2015/04/07/07/51/papaya-salad-710613__340.jpg" alt="" width="70px" height="70px">
             </td>
             <!-- ชื่อสินค้า -->
@@ -63,7 +78,7 @@
                 150.00
             </td>
             <!-- ปุ่มสั่งซื้อ -->
-            <td>
+            <td rowspan="2">
                 <a href="#">สั่ง</a>
             </td>
         </tr>
@@ -78,20 +93,65 @@
             <td bgcolor="blue">
                 120.00
             </td>
-            <td>
-                <a href="#">สั่ง</a>
-            </td>
+            
         </tr>
         
        </tbody>
-       <tfoot>
+       <tfoot align="right">
             <tr>
-                <td>ราคารวมทั้งหมด: 270.00 บาท</td>
+                <td colspan="5"><b> ราคารวมทั้งหมด: 270.00 บาท</b></td>
+                
+                
             </tr>
        </tfoot>
 
 
     </table>
+    <!-- ================================ Span ========================== -->
+     <!-- การจัดกลุ่มด้วย div span  -->
+
+    <!-- <span></span> ใช้จัดกลุ่มข้อความหรือแท็กต่างๆ เข้าเป็นกล่มเดียวกัน เพื่อกำหนดสี รูปแบบตัวอักษร หรือ style ให้กับข้อความต่างๆภายใตตัวของมัน -->
+    <!-- <div></div> ใช้จัดกลุ่มข้อความหรือแท็กต่างๆเข้าเป็นกลุ่มเดียวกันลักษณะคล้ายๆกับ span แต่แตกต่างกันตรงที่แท็ก div จะมีการขึ้นบรรทัดใหม่ก่อรเริ่มแสดงข้อความ ภายใต้ตัวของมัน -->
+
+
+    <span style="color: red;">
+        <h1>HTML</h1>
+        <p>natiphorm</p>
+    </span>
+    <span style="color: green">
+        <h1>CSS</h1>
+        <p>natiphorm</p>
+    </span>
     
+    <div>
+        <h1>HTML</h1>
+        <p>natiphorm</p>
+    </div>
+    <div style="color: green;">
+        <h1>CSS</h1>
+        <p>natiphorm</p>
+    </div>
+    
+    <!-- ==================== ยกตัวอย่างการใช้ span div ให้เห็นให้ชัด ======================== -->
+    <!-- ยืดตามขนาดของข้อความ -->
+    <h1>ใช้ span</h1>
+    <span>natiphorm</span>
+    <span>natiphorm</span>
+    <span>natiphorm</span>
+    
+    <hr>
+    <!-- ยืดเต็มหน้าเว็บ -->
+    <h1>ใข้ div</h1>
+    <div>natiphorm</div>
+    <div>natiphorm</div>
+    <div>natiphorm</div>
+    
+    
+    
+    
+    
+    <hr>
+    <button><a href="index.html">กลับไปหน้าหลัก</a></button>
+
 </body>
 </html>
