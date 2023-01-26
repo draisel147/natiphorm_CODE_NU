@@ -1,0 +1,61 @@
+@import url('');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121821;
+    overflow: hidden;
+}
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 48px;
+    transition: all 0.5s ease-in-out;
+}
+ul:hover li a{
+    color: rgba(255,255,255,0.1);
+}
+ul li a:hover{
+    color: #ddd;
+}
+ul li a::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 192px;
+    font-weight: 800;
+    letter-spacing: 160px;
+    opacity: 0;
+    color: rgba(255,255,255,0.1);
+    z-index: -1;
+    transition: all 0.7s ease-in-out;
+}
+ul li a:hover::before{
+    content: attr(data-text);
+    opacity: 1;
+    letter-spacing: 16px;
+}
