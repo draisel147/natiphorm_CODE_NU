@@ -1,26 +1,23 @@
 package Lab9;
 
-public class Rectangle {
-    private String color;
-    private int Width;
-    private int Hight;
+public class Rectangle extends Shape {
 
-    public Rectangle(String color, int Width, int Hight) {
-        this.Hight = Hight;
-        this.Width = Width;
-        this.color = color;
+    private int width = 0;
+    private int hight = 0;
+
+    public Rectangle(String colour, int width, int hight) {
+        super(colour);
+        this.hight = hight;
+        this.width = width;
 
     }
 
     public int getWidth() {
-        return Width;
+        return width;
     }
 
     public int getHight() {
-        return Hight;
+        return hight;
     }
 
-    public String toString() {
-        return "this shape is" + color;
-    }
 }
