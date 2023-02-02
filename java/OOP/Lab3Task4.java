@@ -1,4 +1,3 @@
-package OOP;
 
 //สร้าง method lastโดย method last ส่ง ออกเป็นค่า String
 public class Lab3Task4 {

@@ -1,4 +1,3 @@
-package OOP;
 
 // For Lab7Task2 code
 public class Order {

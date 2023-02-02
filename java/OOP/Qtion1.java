@@ -1,4 +1,3 @@
-package OOP;
 
 import java.util.*;
 //โปรแกรมคำนวณ อายุบนโลกและดวงจันทร์

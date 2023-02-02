@@ -1,4 +1,3 @@
-package OOP;
 
 //code For Lab4
 public class Person {

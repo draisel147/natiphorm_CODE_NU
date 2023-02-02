@@ -1,4 +1,3 @@
-package OOP;
 
 public class Midtest {
     public static void main(String[] args) {

@@ -1,4 +1,3 @@
-package OOP;
 
 //รับ ค่า มาหาเลขเฉลี่ยทั้งหมด 
 import java.util.Scanner;

@@ -1,4 +1,3 @@
-package OOP;
 
 // รับค่า arryโดยเว้นวรรค(split)
 import java.util.*;

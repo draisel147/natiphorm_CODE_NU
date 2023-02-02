@@ -1,4 +1,3 @@
-package OOP;
 
 class TaskA {
     public static void main(String[] args) {

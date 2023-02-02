@@ -1,4 +1,3 @@
-package OOP;
 
 public class Lab2Task3 {
     public static void main(String[] args) {

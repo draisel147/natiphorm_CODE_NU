@@ -1,4 +1,3 @@
-package OOP;
 
 // For Lab7Task1 code
 public class Product {

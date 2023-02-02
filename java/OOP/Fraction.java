@@ -1,4 +1,3 @@
-package OOP;
 
 //for lab5
 public class Fraction {
@@ -35,7 +34,7 @@ public class Fraction {
         bottom = bottom / n;
     }
 
-    public Fraction multply(int m) {
+    public Fraction multiply(int m) {
         Fraction ans;
         ans = new Fraction(m * top, bottom);
         ans.simplify();

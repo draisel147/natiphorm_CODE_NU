@@ -1,4 +1,3 @@
-package OOP;
 
 // for Lab7Task3 code
 public class Shop {
