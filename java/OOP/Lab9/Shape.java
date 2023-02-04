@@ -1,7 +1,7 @@
 package Lab9;
 
 public class Shape {
-    protected String colour;
+    private String colour;
 
     public Shape(String colour) {
         this.colour = colour;
@@ -17,5 +17,9 @@ public class Shape {
 
     public void setColour(String colour) {
         this.colour = colour;
+    }
+
+    public double getArea() {
+        return 0.0;
     }
 }

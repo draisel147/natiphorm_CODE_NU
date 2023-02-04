@@ -16,9 +16,12 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    @Override
+    public double getArea() {
+        return Math.PI * Math.pow(radius, 2);
+    }
+
     public String toString() {
-        return "this shape is " + colour;
+        return "Circle (" + radius + "): " + super.toString();
     }
 
 }

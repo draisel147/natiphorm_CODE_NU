@@ -3,11 +3,11 @@ package Lab9;
 public class Rectangle extends Shape {
 
     private int width = 0;
-    private int hight = 0;
+    private int height = 0;
 
-    public Rectangle(String colour, int width, int hight) {
+    public Rectangle(String colour, int width, int height) {
         super(colour);
-        this.hight = hight;
+        this.height = height;
         this.width = width;
 
     }
@@ -17,7 +17,11 @@ public class Rectangle extends Shape {
     }
 
     public int getHight() {
-        return hight;
+        return height;
+    }
+
+    public String toString() {
+        return "Rectangle (" + width + ", " + height + "): " + super.toString();
     }
 
 }
