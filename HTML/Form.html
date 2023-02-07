@@ -1,12 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>เรียนรู้เรื่อง Form</title>
 </head>
+
 <body>
-    
+    <h1>เรียนรู้เรื่อง From</h1>
+    <hr><br>
+
+
+    <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+    <!-- action = จะเป็นตัวการทำงานกับ sever -->
+    <!-- placeholder = จะเป็นตัวที่ใส่คำอธิบายให้พิมอะไรด้านใน input -->
+    <!-- required = ต้องใส่กล่องนี้ทุกครั้งถ้าไม่ใส่จะไม่สำเร็จ -->
+    <!-- readonly = อ่านได้อย่างเดียวไม่สามารถ แก้ไขไม่ได้ -->
+
+    <!-- ===================================================================================================== -->
+
+    <!-- ================================TYPE=============================== -->
+    <!-- type จะเป็นชนิดขอมูลที่ใส่ใน input  -->
+    <!-- text = ตัวอักษร -->
+    <!-- email = อีเมล -->
+    <!-- password = พาสเวิร์ด -->
+    <!-- number = ชนิดตัวเลข -->
+    <!-- value = ใส่ค่าเริ้มต้นให้เลย -->
+    <!-- min = ค่าต่ำสุด -->
+    <!-- max = ค่าสูงสุด -->
+    <!-- date = วันที่ -->
+    <!-- date time = วันและเวลา -->
+    <!-- tel = เบอร์โทร -->
+    <!-- color = เลือกสี -->
+    <!-- range = ช่วงตัวเลข -->
+    <!-- radio = ปุมตัวเลือก -->
+    <!-- checkbox = ปุ่มติ๊กถูก -->
+    <!-- file = เลือกไฟล์ -->
+    <!-- url = ใส่ url -->
+    <!-- submit = ส่งชุดข้อมูลทั้งหมด -->
+    <!-- reset = ล้างข้อมูล -->
+
+    <!-- ======================================================================================================= -->
+
+    <!-- ================================== SELECT ================================================= -->
+    <!-- ต้องใช้คู่กับ option  =Drop-Down -->
+
+    <!-- ========================================================================================================== -->
+    <form action="">
+        <div>
+            <!-- type ต้องระบุว่าเป็นข้อมูลชนิดอะไร -->
+            <label for="Firstname">ชื่อจริง</label>
+            <input type="text" name="fname" placeholder="ป้อนชื่อของคุณ" required>
+
+        </div>
+        <!-- ================= TEXT ====================== -->
+        <div>
+            <label for="Lastname">นามสกุล</label>
+            <input type="text" name="lname" placeholder="นามสกุล" required>
+        </div>
+        <!-- ================ EMAIL ======================= -->
+        <div>
+            <label for="email">อีเมล</label>
+            <input type="email" name="email" placeholder="ป้อนอีเมลของคุณ" required </div>
+            <!-- ====================== PASSWORD ===================== -->
+            <div>
+                <label for="Password">รหัสผ่าน</label>
+                <input type="password" name="password" placeholder="รหัสผ่านของคุณ" required>
+            </div>
+            <!-- ===================== PLACEHOLDER ======================= -->
+            <!-- ====================== TEXTAREA =================== -->
+            <div>
+                <label for="address">ที่อยู่</label>
+                <textarea name="" id="" cols="30" rows="5" placeholder="ป้อนที่อยู่" readonly>
+                    matihporm
+                </textarea>
+            </div>
+            <!-- ==================== number ===================== -->
+            <!-- ===================  readonly =================== -->
+            <div>
+                <label for="age">อายุ</label>
+                <input type="number" name="age" placeholder="อายุของคุณ" min="0" max="10" value="2" readonly>
+            </div>
+            <!-- ================== DATE ================ -->
+            <div>
+                <label for="birthdate">วันเกิด</label>
+                <input type="date" name="birthdate">
+            </div>
+            <!-- ================= TEL =================== -->
+            <div>
+                <label for="telphone">เบอร์โทร</label>
+                <input type="tel" name="telphone">
+            </div>
+            <!-- ================ COLOR ===================== -->
+            <div>
+                <label for="color"> สีที่ไม่ชอบ</label>
+                <input type="color" name="color">
+            </div>
+            <!-- ================= RANGE ================= -->
+            <!-- ขนาด range value เริ้มต้นที่ 0 จบที่ 100 -->
+            <div>
+                <label for="range">ช่วงตัวเลข</label>
+                <input type="range" name="range" value="">
+            </div>
+
+            <!-- =============== SECLECT AND OPTION ================ -->
+            <!-- ใช้คำสั่ง selected เพื่อเป็นค่าเริ่มต้น -->
+            <!-- selcet ต้องใช้กับ option -->
+            <div>
+                <label for="edu">ระดับการศึกษา</label>
+                <select name="edu" id="" required>
+                    <option value="ปริญญาตรี">ปริญญาตรี</option>
+                    <option value="มัธยมศึกษา">มัธยมศึกษา</option>
+                    <option value="ประถมศึกษา" selected>ประถมศึกษา</option>
+                </select>
+            </div>
+            <!--============== RADIO =============== -->
+            <!-- ถ้าไม่กำหนด name(หรือกลุ่ม) จะสามารถเลือกได้หลายตัวเลือก -->
+            <!-- ถ้ากำหนด name(หรือกลุ่ม) เหมือนกันจะสามารถเลือกได้ค่าเดียว -->
+            <div>
+                <label for="gender">เพศ</label>
+                <input type="radio" name="gender">เพศชาย
+                <input type="radio" name="gender">เพศหญิง
+                <input type="radio">
+                <input type="text" placeholder="กำหนดเอง">
+            </div>
+            <!-- ================ CHECKBOX ================== -->
+            <div>
+                <label for="fav">สิ่งที่ชอบ </label>
+                <input type="checkbox" name="fav">เขียนเว็บ
+                <input type="checkbox" name="fav">อ่่านหนังสือ
+                <input type="checkbox" name="fav">เล่นกีฬา
+                <input type="checkbox" name="fav">เล่นเกม
+                <span>
+                    <input type="checkbox" name="fav">อืนๆ
+                    <input type="text" name="fav">
+                </span>
+            </div>
+            <!-- ================ FILE ============== -->
+            <div>
+                <label for="แนบไฟล์">เลือกไฟล์</label>
+                <input type="file">
+            </div>
+            <!-- ============ URL ========== -->
+            <div>
+                <label for="web">แนบเว็บไซต์</label>
+                <input type="url">
+            </div>
+            <!-- =========== SUBMIT =================== -->
+            <div>
+                <input type="submit" value="บันทึกข้อมูล">
+
+                <!-- ใช้ได้เหมือนกัน -->
+                <!-- <button type="submit">บันทึกข้อมูล</button> -->
+
+                <!-- ==================== RESET ============== -->
+                <!-- จะล้างค่าในขอบเขต form นั้นๆ  -->
+                <input type="reset" value="ล้างข้อมูล">
+                <!-- หรือ -->
+                <!-- <button type="reset">ล้างข้อมูล</button> -->
+
+            </div>
+
+
+    </form>
+
+    <br>
+    <hr>
+    <a href="index.html" target="_blank">กลับหน้าหลัก</a>
 </body>
+
 </html>
