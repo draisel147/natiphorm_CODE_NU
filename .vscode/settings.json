@@ -1,7 +1,6 @@
 {
-    "cSpell.enabled": true,
-    "cSpell.language": "en",
-    "liveServer.settings.multiRootWorkspaceName": "natiphorm_CODE_NU",
-    
-    
+  "cSpell.enabled": true,
+  "cSpell.language": "en",
+  "liveServer.settings.multiRootWorkspaceName": "natiphorm_CODE_NU",
+  "java.debug.settings.onBuildFailureProceed": true
 }
