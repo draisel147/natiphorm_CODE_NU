@@ -1,18 +1,25 @@
 package Lab10;
 
 public class Attraction extends Place {
-    private int costs;
-    private String city;
+    private String attractionType;
+    private int entryTicketPrice;
 
-    public Attraction(String name, String address, String province, String city, int costs) {
-        super(name, address, province);
-        this.costs = costs;
-        this.city = city;
+    public Attraction(String n, String add, String pro, String type, int price) {
+        super(n, add, pro);
+        attractionType = type;
+        entryTicketPrice = price;
 
     }
 
-    public int getCosts() {
-        return costs;
+    public String getAttractionType() {
+        return attractionType;
     }
 
+    public int getEntryTicketPrice() {
+        return entryTicketPrice;
+    }
+
+    public boolean isFreeEntry() {
+        return entryTicketPrice == 0;
+    }
 }

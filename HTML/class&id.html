@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class & ID</title>
+    <hr>
+    <h1 align="center">เรียนรู้เรื่อง class</h1>
+    <hr>
+
+
+    <style>
+        /* เปลี่ยน h1 ให้เป็นสีแดงให้หมด */
+        h1 {
+            color: red;
+        }
+
+        /* การ . (จุด)จะเป็นการต่อด้วยชื่อ class นั้นๆ */
+        .b {
+            color: green;
+        }
+
+        /*   # ( ) จะเป็นการกำหนดชื่อของ id */
+        #a {
+            color: pink;
+        }
+
+        /* สามารถระบุเจาะจงได้ว่า ให้แท็ก h1 id="c" เป็นสีฟ้า */
+        h1#c {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<!-- class = สามารถใส่ชื่อซ้ำกันได้ -->
+<!-- id = เป็นการกำหนดรหัสเฉพาะ(ไม่นิยมใส่ค่าซ้ำกันเพราะจะทำให้มีมีปัญหาตอนประมวณผลข้อมูลหลังบ้าน
+    แต่ใส่สองอันเพื่อระบุว่า มี class ="a" มี id="b" ได้เป็นต้น) -->
+
+<body>
+    <h1 class="a" id="a">natiphorm sonta</h1>
+    <h1 class="a">natiphorm sonta</h1>
+    <h1 class="b">natiphorm sonta</h1>
+    <h1 id="b">natiphorm sonta</h1>
+    <h1 id="c">natiphorm sonta</h1>
+
+</body>
+
+</html>
