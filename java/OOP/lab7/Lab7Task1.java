@@ -1,5 +1,5 @@
 
-public class Lab8Task1 {
+public class Lab7Task1 {
     public static void main(String[] args) {
 
         int[] someNumbers = { 5, 3, 8, 8 };

@@ -1,7 +1,7 @@
 
-public class Lab8Task2 {
+public class Lab7Task4 {
     public static void main(String[] args) {
-        int[] someNumbers = { 5, 3, 8, 8 };
+        double[] someNumbers = { 2.3, 5.4, 7.1, 9.6 };
         double avg = Calculator.average(someNumbers);
         System.out.println("Average is " + avg);
     }

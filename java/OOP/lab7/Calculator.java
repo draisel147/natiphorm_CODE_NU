@@ -1,5 +1,5 @@
 
-// For Lab8 
+// For Lab7 
 public class Calculator {
     private int num;
 
@@ -7,7 +7,7 @@ public class Calculator {
         this.num = num;
     }
 
-    // Lab8Task1
+    // Lab7Task1
     public static int sum(int[] numbers) {
         int sum = 0;
         for (int i = 0; i < numbers.length; i++) {
@@ -16,7 +16,7 @@ public class Calculator {
         return sum;
     }
 
-    // Lab8Task2
+    // Lab7Task2
     public static double average(int[] numbers) {
         double avg = 0;
         for (int i = 0; i < numbers.length; i++) {
@@ -25,7 +25,7 @@ public class Calculator {
         return avg / numbers.length;
     }
 
-    // Lab8Task3
+    // Lab7Task3
     public static double sum(double[] numbers) {
         double sum = 0;
         for (int i = 0; i < numbers.length; i++) {
@@ -34,7 +34,7 @@ public class Calculator {
         return sum;
     }
 
-    // Lab8Task4
+    // Lab7Task4
     public static double average(double[] numbers) {
         double avg = 0;
         for (int i = 0; i < numbers.length; i++) {
@@ -43,7 +43,7 @@ public class Calculator {
         return avg / numbers.length;
     }
 
-    // Lab8Task5
+    // Lab7Task5
     public static int sum(int[] list1, double[] list2) {
         int sum1 = 0;
         double sum2 = 0;
@@ -57,7 +57,7 @@ public class Calculator {
         return (int) (sum1 + sum2);
     }
 
-    // Lab8Task6
+    // Lab7Task6
     public static double average(double[] list1, int[] list2) {
         int avg1 = 0;
         double avg2 = 0;

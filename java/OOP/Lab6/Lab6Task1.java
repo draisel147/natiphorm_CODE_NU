@@ -1,5 +1,5 @@
 
-public class Lab7Task1 {
+public class Lab6Task1 {
     public static void main(String[] args) {
         Product tea1 = new Product("Thai Iced Tea", 35.0);
         Product tea2 = new Product("English Breakfast Tea", 45.0);

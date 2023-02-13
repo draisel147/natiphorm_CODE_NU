@@ -1,5 +1,5 @@
 
-public class Lab7Task3 {
+public class Lab6Task3 {
     public static void main(String[] args) {
         Shop cafe = setupShop();
 
