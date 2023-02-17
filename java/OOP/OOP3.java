@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class OOP3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int castle = Integer.parseInt(sc.nextLine());
+        int principality = Integer.parseInt(sc.nextLine());
+        String name = sc.nextLine();
+        Palace p = new Palace(castle, principality, name);
+        if (p.LargePalace() == true) {
+            System.out.println(p.getName() + " is a largePalace");
+        } else {
+            System.out.println(p.getName() + " is a NormalPalace");
+        }
+    }
+}
