@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video learning</title>
+</head>
+
+<body>
+    <h1 align="center">เรียนรู้การนำ video เข้ามาบนเว็บ</h1>
+    <hr>
+    <!-- การนำ video เข้ามา (ดาวโหลดมาเอง)-->
+    <!-- **************** ต้องมา controls ถึงจะเล่น video ได้ **************** -->
+    <h1>video ดาวโหลดมาเอง</h1>
+    <video controls width="400px" hight="400px">
+        <source src="Video/PhuminWarin.mp4" type="video/mp4">
+    </video>
+
+    <!-- การนำวีดีโอจากด้านนอกลิ้งจากด้านนอกได้(youtube *ส่วนใหญ่) -->
+    <!-- ถ้าเป็น yputube ต้องเข้าไปที่แชร์และกดที่ (ผัง) แล้วจะได้ code มาให้เลย -->
+    <br>
+
+    <h1>video จาก youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fULyM3VW0uc" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+    <!-- ============================= sound ============================== -->
+    <br><br><br><br><br><br>
+    <hr>
+    <h1 align="center">HTML sound</h1>
+
+    <!-- ********** ต้องระบุ controls ด้วยเพื่อให้สามารถเล่นได้ ************** -->
+    <!-- autoplay จะทำให้เปิดเว็บขึ้นมาแล้วเพลงจะเล่นเอง แบบ auto -->
+    <audio controls autoplay>
+        <source src="Sound/ขอบคุณตัวเองแจ่มจันทร์.mp3" type="audio/mp3">
+    </audio>
+
+    <hr><br>
+    <button><a href="index.html">กลับสู่หน้าหลัก</a></button>
+</body>
+
+</html>
