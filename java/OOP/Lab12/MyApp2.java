@@ -8,6 +8,7 @@ public class MyApp2 extends JFrame implements ActionListener {
     JLabel resultJLabel;
 
     public MyApp2() {
+        // สามารถใช้เป็น super("My Application") ได้เหมือนกัน
         setTitle("My  Application");
         setSize(300, 200);
         setLocation(10, 200);
@@ -22,6 +23,7 @@ public class MyApp2 extends JFrame implements ActionListener {
         // (button) คือชื่อตัวแปล
         // getContentPane() คือจะทำให้มันแสดงบน JFrame
         getContentPane().add(button);
+
         JButton button2 = new JButton("punch");
         button2.addActionListener(this);
         getContentPane().add(button2);
