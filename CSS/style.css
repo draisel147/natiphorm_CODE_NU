@@ -1,0 +1,33 @@
+h1{
+    /* เปลี่ยน สี */
+    color: red;
+    /* ปรับขนาดตัวอักษรตาม px (pixel) */
+    font-size: 30px;
+}
+/* ชาป (#) จะเป็นการอ้างอิงถึงตัวที่เป็น id (ไม่สามารถตั้งชื่อซ้ำได้) */
+#learn_CSS{
+    color: black;
+    font-size: 50px;
+}
+/* จุด (.) จะเป็นการอ้างอิงถึงตัวที่เป็น class  */
+.title{
+    color: blue;
+}
+#title{
+    color: brown;
+}
+/* สามารถแบบหลายๆตัวได้คั่นด้วย (,)  */
+p,.title,#title{
+    /* ตัวเอียง */
+    font-style: italic;
+}
+/* สามารถระบุเจาะจงเป็น แท็ก p และ class ให้เป็น ... ได้ */
+p.message{
+    /* ตัวหนา */
+    font-weight: bolder;
+}
+.message{
+    color: green;
+
+}
+
