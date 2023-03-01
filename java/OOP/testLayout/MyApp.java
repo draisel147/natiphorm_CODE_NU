@@ -15,11 +15,11 @@ class MyApp extends JFrame {
         p1.setLayout(new GridLayout(2, 1));
         JLabel l1 = new JLabel("Username :");
         JLabel l2 = new JLabel("Password :");
-        JTextField f1 = new JTextField(20);
-        JTextField f2 = new JTextField(20);
         // p3 สร้าง panel(Flow) เอาไว้จัดระแบบให้ user และ textfield อยู่ด้วยกัน
         JPanel p3 = new JPanel();
         p3.setLayout(new FlowLayout());
+        JTextField f1 = new JTextField(20);
+        JTextField f2 = new JTextField(20);
 
         p3.add(l1);
         p3.add(f1);
