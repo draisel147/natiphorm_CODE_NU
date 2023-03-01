@@ -49,7 +49,7 @@ class Test3 extends JFrame implements ActionListener {
 
         JPanel p5 = new JPanel();
         p5.setLayout(new BorderLayout());
-        total = new JLabel("Bigger is :");
+        total = new JLabel("????");
         p5.add(total);
         getContentPane().add(p5, BorderLayout.PAGE_END);
     }
@@ -66,7 +66,7 @@ class Test3 extends JFrame implements ActionListener {
         int x4 = Integer.parseInt(t4.getText());
 
         int big = Math.max(Math.max(x1, x2), Math.max(x3, x4));
-        total.setText("Bigger is " + big);
+        total.setText("Bigger is :" + big);
     }
 
 }
