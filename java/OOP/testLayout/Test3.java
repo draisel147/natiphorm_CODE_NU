@@ -7,6 +7,7 @@ import java.awt.event.*;
 class Test3 extends JFrame implements ActionListener {
     JTextField t1, t2, t3, t4;
     JLabel total;
+    JPanel p5;
 
     Test3() {
         super("Calculate");
@@ -47,7 +48,7 @@ class Test3 extends JFrame implements ActionListener {
 
         getContentPane().add(p2, BorderLayout.PAGE_START);
 
-        JPanel p5 = new JPanel();
+        p5 = new JPanel();
         p5.setLayout(new BorderLayout());
         total = new JLabel("????");
         p5.add(total);
@@ -67,6 +68,7 @@ class Test3 extends JFrame implements ActionListener {
 
         int big = Math.max(Math.max(x1, x2), Math.max(x3, x4));
         total.setText("Bigger is :" + big);
+
     }
 
 }
