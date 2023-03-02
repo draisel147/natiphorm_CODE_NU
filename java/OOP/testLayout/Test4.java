@@ -10,7 +10,7 @@ public class Test4 extends JFrame implements ActionListener {
 
     Test4() {
         super("Window");
-        setSize(150, 150);
+        setSize(250, 150);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         setLayout(new GridLayout(1, 2));
