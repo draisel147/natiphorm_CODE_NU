@@ -10,7 +10,7 @@ public class Lab13Task5 extends JFrame implements ActionListener {
 
     public Lab13Task5() {
         setTitle("Fraction to real");
-        setSize(200, 100);
+        setSize(350, 100);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
         final JPanel calPanel = new JPanel(new FlowLayout());

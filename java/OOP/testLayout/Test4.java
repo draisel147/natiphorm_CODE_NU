@@ -15,9 +15,11 @@ public class Test4 extends JFrame implements ActionListener {
 
         setLayout(new GridLayout(1, 2));
         JButton b1 = new JButton("x2");
+        b1.setFont(new Font("Helvetica Neue", Font.BOLD, 20));
         b1.addActionListener(this);
         add(b1);
         l1 = new JLabel("1");
+        l1.setFont(new Font("Helvetica Neue", Font.BOLD, 20));// ปรับ font
         up = 1;
         add(l1);
     }
@@ -33,5 +35,6 @@ public class Test4 extends JFrame implements ActionListener {
             up *= 2;
         }
         l1.setText(Integer.toString(up));
+
     }
 }

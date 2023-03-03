@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Lab13Task5",
+      "request": "launch",
+      "mainClass": "Lab13.Lab13Task5",
+      "projectName": "Code_ec1bb223"
+    },
+    {
+      "type": "java",
       "name": "Test4",
       "request": "launch",
       "mainClass": "testLayout.Test4",

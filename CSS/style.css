@@ -26,7 +26,7 @@ p.message{
     /* ตัวหนา */
     font-weight: bolder;
 }
-.message{
+h1.message{
     color: green;
 
 }
