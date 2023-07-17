@@ -11,7 +11,7 @@ public class Q1 {
         if (num < 0) {
             System.out.println("negative");
         }
-        if (num == 0) {
+        else  {
             System.out.println("zero");
         }
     }
