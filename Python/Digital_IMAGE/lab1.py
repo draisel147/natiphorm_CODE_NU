@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 
-img = cv2.imread("/content/drive/MyDrive/image/Lab1/chest_xray1.jpeg")
+img = cv2.imread("C:\Users\rivai\OneDrive\เดสก์ท็อป\imagechest_xray1.jpeg")
 imgresize = cv2.resize(img, None, fx=0.25, fy=0.25)
 
 print("1.เพิ่มค่าความสว่าง")
