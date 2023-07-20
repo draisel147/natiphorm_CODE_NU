@@ -10,6 +10,17 @@ def check_1(char_list):
         if char == '1':
             count += 1
     return count
+def check_invalid(u):
+    
+    valid_chars = set('01')
+    if not all(char in valid_chars for char in u):
+        return True
+
+    # Check if the input contains at most two characters
+    if len(u) > 2:
+        return True
+
+    return False
 
 print("1 คือ พระ , 0 คือ ปีศาจ")
 left = ['1','1','1','0','0','0']
@@ -111,3 +122,5 @@ if len(u) <= 2:
                         x = input()
                         u = x.split()
                         i = i+1
+elif check_invalid(u):
+    print("Invalid input! Please enter '0' or '1' characters only, and at most two characters.")
