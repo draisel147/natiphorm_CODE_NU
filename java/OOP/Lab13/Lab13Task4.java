@@ -25,24 +25,24 @@ public class Lab13Task4 extends JFrame {
 
         JPanel p2 = new JPanel();
         p2.setLayout(new GridLayout(2, 3, 10, 10));
-        final JButton button1 = new JButton("1");
-        getContentPane().add(button1);
-        final JButton button2 = new JButton("2");
-        getContentPane().add(button2);
-        final JButton button3 = new JButton("3");
-        getContentPane().add(button3);
-        final JButton button4 = new JButton("4");
-        getContentPane().add(button4);
-        final JButton button5 = new JButton("5");
-        getContentPane().add(button5);
-        final JButton button6 = new JButton("6");
-        getContentPane().add(button6);
-        p2.add(button1);
-        p2.add(button2);
-        p2.add(button3);
-        p2.add(button4);
-        p2.add(button5);
-        p2.add(button6);
+        final JButton b1 = new JButton("1");
+        getContentPane().add(b1);
+        final JButton b2 = new JButton("2");
+        getContentPane().add(b2);
+        final JButton b3 = new JButton("3");
+        getContentPane().add(b3);
+        final JButton b4 = new JButton("4");
+        getContentPane().add(b4);
+        final JButton b5 = new JButton("5");
+        getContentPane().add(b5);
+        final JButton b6 = new JButton("6");
+        getContentPane().add(b6);
+        p2.add(b1);
+        p2.add(b2);
+        p2.add(b3);
+        p2.add(b4);
+        p2.add(b5);
+        p2.add(b6);
         c.add(p2, BorderLayout.CENTER);
 
     }

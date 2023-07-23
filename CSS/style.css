@@ -1,3 +1,7 @@
+/* ทุกแท็กของหน้านี้ */
+*{
+    font-family: monospace;
+}
 h1{
     /* เปลี่ยน สี */
     color: red;
@@ -6,12 +10,13 @@ h1{
 }
 /* ชาป (#) จะเป็นการอ้างอิงถึงตัวที่เป็น id (ไม่สามารถตั้งชื่อซ้ำได้) */
 #learn_CSS{
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 50px;
 }
 /* จุด (.) จะเป็นการอ้างอิงถึงตัวที่เป็น class  */
 .title{
     color: blue;
+    
 }
 #title{
     color: brown;
@@ -30,4 +35,5 @@ h1.message{
     color: green;
 
 }
+
 
