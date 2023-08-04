@@ -44,22 +44,39 @@ print(root.x)
 for x in a[1:]:
     tree1.addnode(binode(x),root)
 
-    def treeheight(root):
-        if root == None:
-            return 0
-        else:
-            return max(treeheight(root.l) , treeheight(root.r)) + 1
+def treeheight(root):
+    if root == None:
+        return 0
+    else:
+        return max(treeheight(root.l) , treeheight(root.r)) + 1
+    
+print("จำนวนชั้น : ")
+print(treeheight(root))
         
-    inorderlist = []
-    def inorder(root):
-        if root.l != None:
-            inorder(root.l)
-        inorderlist.append(root.x)
-        if root.r != None:
-            inorder(root.r)
 
-    inorder(root)
-    print(inorder)
+inorderlist = []
+def inorder(root):
+    if root.l != None:
+        inorder(root.l)
+    inorderlist.append(root.x)
+    if root.r != None:
+        inorder(root.r)
+inorder(root)
+print("Inorderlist")
+print(inorderlist)
+
+preorderlist = []
+def preorder(root):
+    preorderlist.append(root.x)
+    if root.l != None:
+        preorder(root.l)
+    if root.r != None:
+        preorder(root.r)
+
+preorder(root)
+print("Preorderlist")
+print(preorderlist)
+
 
 
 
