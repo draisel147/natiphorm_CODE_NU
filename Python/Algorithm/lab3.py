@@ -50,9 +50,7 @@ def treeheight(root):
     else:
         return max(treeheight(root.l) , treeheight(root.r)) + 1
     
-print("จำนวนชั้น : ")
-print(treeheight(root))
-        
+print("จำนวนชั้น : ",treeheight(root))
 
 inorderlist = []
 def inorder(root):
