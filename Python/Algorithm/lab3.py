@@ -32,8 +32,6 @@ class tree :
                 self.addnode(newnode,curpos.l)
 
 
-
-
 a = gennumber(12)
 print(a)
 newnode = binode(a[0])
@@ -52,17 +50,8 @@ def treeheight(root):
     
 print("จำนวนชั้น : ",treeheight(root))
 
-inorderlist = []
-def inorder(root):
-    if root.l != None:
-        inorder(root.l)
-    inorderlist.append(root.x)
-    if root.r != None:
-        inorder(root.r)
-inorder(root)
-print("Inorderlist")
-print(inorderlist)
 
+# Preorder
 preorderlist = []
 def preorder(root):
     preorderlist.append(root.x)
@@ -75,6 +64,25 @@ preorder(root)
 print("Preorderlist")
 print(preorderlist)
 
+
+# Inorder 
+inorderlist = []
+def inorder(root):
+    if root.l != None:
+        inorder(root.l)
+    inorderlist.append(root.x)
+    if root.r != None:
+        inorder(root.r)
+inorder(root)
+print("Inorderlist")
+print(inorderlist)
+
+
+#Postorder
+# postorderlist = []
+# def postorder(root):
+    
+    
 
 
 
