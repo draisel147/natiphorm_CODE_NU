@@ -78,9 +78,17 @@ print("Inorderlist")
 print(inorderlist)
 
 
-#Postorder
-# postorderlist = []
-# def postorder(root):
+# Postorder
+postorderlist = []
+def postorder(root):
+    if root is not None:
+        postorder(root.l)
+        postorder(root.r)
+        postorderlist.append(root.x)
+
+postorder(root)
+print("Postorderlist")
+print(postorderlist)
     
     
 
