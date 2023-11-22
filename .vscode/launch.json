@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "numcon",
+      "request": "launch",
+      "mainClass": "numcon",
+      "projectName": "code_b1db8c81"
+    },
+    {
+      "type": "java",
+      "name": "Assignment3",
+      "request": "launch",
+      "mainClass": "Assignment3",
+      "projectName": "code_b1db8c81"
+    },
+    {
+      "type": "java",
       "name": "Lab13Task5",
       "request": "launch",
       "mainClass": "Lab13.Lab13Task5",
