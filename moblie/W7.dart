@@ -9,6 +9,7 @@ class BigObject {
   }
 }
 
+//เป็นการย่อ
 BigObject fillBigObject(BigObject obj) {
   return obj
     ..anInt = 1

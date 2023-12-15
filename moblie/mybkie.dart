@@ -6,8 +6,8 @@ void main() {
   myBike.brakeDown(2);
   print(myBike);
 
-  Bicycle mybike2 = myBike;
-
+  Bicycle mybike2 = Bicycle(20, 'crokodile', 50);
+  mybike2 = myBike;
   print(mybike2._speed);
 }
 

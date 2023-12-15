@@ -18,4 +18,5 @@ void main() {
   name = "mon";
   //name = 89; //Error เพราะ ไม่ใช้ String
   print(name);
+  //!============== Kong ===================
 }
