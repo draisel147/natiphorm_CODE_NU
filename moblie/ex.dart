@@ -1,17 +1,18 @@
 import 'dart:async';
 
-void main() {
+void main() async {
   print("เริ่ม");
 
   int count = 1;
 
-  Timer.periodic(Duration(seconds: 2), (Timer t) {
-    if (count <= 10) {
-      print(count);
-      count++;
-    } else {
-      t.cancel();
-      print("จบ");
-    }
-  });
+  await runTimer(count);
+
+  print("จบ");
+}
+
+Future<void> runTimer(int count) async {
+  await for (var num in Stream.periodic(Duration(seconds: 2), (int num) {
+    print(count);
+    count++;
+  }).take(10)) {}
 }

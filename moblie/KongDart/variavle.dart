@@ -42,4 +42,6 @@ void main() {
   print(studaentpoint['Cat']);
   studaentpoint['Ney'] = 100;
   print(studaentpoint['Ney']);
+
+  final aListofStrings = <String>{};
 }

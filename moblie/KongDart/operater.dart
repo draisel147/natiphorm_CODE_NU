@@ -14,9 +14,9 @@ void main() {
   int total1 = number1 ~/ number2;
   // int total2 = number1 / number2 as int;//! Error ปัจจุบันใช้งานไม่ได้แล้ว เพราะ double เป็นหน่วยที่ใหญ่กว่าแล้ว
   int total3 = (number1 / number2).toInt();
-  print(total1);
+  print('แบบ ~ = $total1');
   // print(total2);
-  print(total3);
+  print('แบบ .toInt = $total3');
 
   //การหารเอาเศษ
   int divie() {

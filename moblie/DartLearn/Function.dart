@@ -10,7 +10,7 @@ void main() {
   //!void จะไม่ return อะไรเลย
   void calculate(number, number2, name, boole) {
     //*สั่งให้ในฟังก์ชั้นทำอะไรได้บ้าง
-    print(number + number2);
+    print('${number + number2} $name  $boole');
   }
 
   //*เรียกใช้ ฟังก์ชั้น

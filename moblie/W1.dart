@@ -1,5 +1,10 @@
+String stringify(int x, int y) {
+  return '$x $y';
+}
+
+// Tests your solution (Don't edit!):
 void main() {
-  String stringify(int x, int y) {
-    return '$x $y';
-  }
+  assert(stringify(2, 3) == '2 3',
+      "Your stringify method returned '${stringify(2, 3)}' instead of '2 3'");
+  print(stringify(2, 3));
 }

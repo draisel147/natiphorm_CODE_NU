@@ -5,6 +5,7 @@ public class SumtionLoop {
         Scanner sc = new Scanner(System.in);
         int sum = 0, count = 0, avg = 0;
         while (true) {
+            
             System.out.print("ป้อนตัวเลขของคุณ : ");
             int number = sc.nextInt();
             if (number <= 0)
